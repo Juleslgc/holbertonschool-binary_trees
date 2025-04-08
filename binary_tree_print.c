@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+=======
+>>>>>>> alcinoe
 #include "binary_trees.h"
 
 /* Original code from http://stackoverflow.com/a/13755911/5184480 */
@@ -96,4 +99,8 @@ void binary_tree_print(const binary_tree_t *tree)
 		free(s[i]);
 	}
 	free(s);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> alcinoe
