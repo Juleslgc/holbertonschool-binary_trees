@@ -31,8 +31,6 @@ else
 	parent->left = new;
 }
 return (new);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> alcinoe
+
+
