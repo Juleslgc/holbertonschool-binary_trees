@@ -7,15 +7,16 @@
 
 int balance_height(binary_tree_t *tree)
 {
+	int height_left, height_right;
+
 	if (tree == NULL)
 	{
 		return (0);
 	}
-	if (tree->left == NULL && tree->right == NULL)
-	{
-		return (1);
-	}
-	return (balance_height(tree->left) + balance_height(tree->right));
+	height_left = balance_height(tree->left);
+	height_right = balance_height(tree->right);
+
+	return (1 + (height_left > height_right ? height_left : height_right));
 }
 
 /**

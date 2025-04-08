@@ -14,13 +14,13 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 
 	if (tree->right != NULL && tree->left != NULL)
 	{
-		if (tree->left->left == NULL && tree->left->right == NULL &&
-		tree->right->right == NULL && tree->right->left == NULL)
+		if ((tree->left->left == NULL && tree->left->right == NULL) &&
+		(tree->right->right == NULL && tree->right->left == NULL))
 		{
 			return (1);
 		}
-		return (binary_tree_is_perfect(tree->right) &&
-		binary_tree_is_perfect(tree->left));
+		return (binary_tree_is_perfect(tree->left) &&
+		binary_tree_is_perfect(tree->right));
 	}
 	return (0);
 }
